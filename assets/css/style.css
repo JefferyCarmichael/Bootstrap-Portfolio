@@ -49,8 +49,7 @@ h1 {
  bottom: 1px;
   width: 250px;
   height: 90px;
-
-  font-size: 30px;
+  text-shadow: 0 -1px 2px rgb(155, 153, 153);
   font-weight: 700;
   line-height: 90px;
   color: #fff;
@@ -111,6 +110,11 @@ footer {
   width: 100%;
   border: 0 none;
   opacity: 0.8;
+}
+
+.work{
+  border-color: rgb(108, 112, 112);
+  
 }
 
 h3,.h3{
