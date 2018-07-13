@@ -88,8 +88,9 @@ footer {
   color: #ccc;
   background: rgb(123, 124, 124);
   border-top: 8px solid#304077;
-  box-shadow: inset 0 0 20px #304077;
+  box-shadow: inset 0 0 20px #6e758a;
   height: 50px;
+  background: url("../images/584853.jpg")
 }
 
 #main-container {

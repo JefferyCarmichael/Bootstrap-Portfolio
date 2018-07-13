@@ -149,6 +149,7 @@ footer {
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
+  background: url("../images/concrete_seamless.png")
 }
 
 /* sidebar */
