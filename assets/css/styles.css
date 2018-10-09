@@ -1,10 +1,12 @@
 body {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
     padding-top: 3.4375rem;
-    background-image: url("../images/subtle-light-pattern.jpg");
+    /* background-image: url("../images/hexagonal.jpg"); */
+    background-image: url("../images/concrete_seamless.png");
     background-attachment: fixed;
+    /* background-size: cover; */
   }
-  
+
   @media (min-width: 62rem) {
     body {
       padding-top: 3.4375rem;
@@ -54,6 +56,7 @@ body {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-weight: 500;
 }
+
 .logo{
   height: 3.75rem;
   width: 3.75rem;
@@ -79,6 +82,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   }
 
 #info{
+  font-size: 1.125rem;
   font-weight: 600;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.404)
 }
@@ -93,6 +97,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
 #about{
+  font-size: 1.125rem;
   font-weight: 800;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.329)
 
@@ -101,8 +106,6 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 .sequelize{
   width: 8.57rem;
 }
-
-
 
 #icons .fa {
   font-size: 2.5rem;
