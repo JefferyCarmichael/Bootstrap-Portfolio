@@ -5,11 +5,6 @@ body {
     background-attachment: fixed;
   }
 
-  @media (min-width: 62rem) {
-    body {
-      padding-top: 3.4375rem;
-    }
-  }
   
   .project {
     margin-bottom: 1.875rem;
@@ -22,6 +17,11 @@ body {
 .mainCard{
   box-shadow: .125rem .125rem .125rem .0625rem rgba(17, 17, 17, 0.575);
 }
+.mainCard:hover {
+  /* color: rgb(234, 236, 122); */
+  box-shadow: .125rem .1875rem .625rem .1875rem rgba(9, 29, 77, 0.4);
+  transform: translateY(.125rem);
+}
 
 .card-link,.card-title{
   font-weight: 800;
@@ -31,8 +31,17 @@ body {
 
 .nav-link{
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 400;
 }
+
+#navName{
+  /* font-family: 'Nothing You Could Do', cursive; */
+  color: #c3c5c5;
+  font-size: 1.65rem;
+  font-weight: 400;
+  text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
+}
+
 
 /* Picture on About Page */
 .auth-image {
@@ -49,7 +58,7 @@ body {
   float: left;
   width: 100%;
   max-width: 60rem;
-  margin: 1.875rem 0 3.5rem;
+  margin: 3.875rem 0 3.5rem;
   background: #fff;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-weight: 500;
@@ -64,7 +73,7 @@ body {
 
 /* Main Page Title */
 #name{
-margin-top: 1.875rem;
+margin-top: 2.875rem;
 font-size: 3.75rem;
 font-weight: 900;
 text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
@@ -98,7 +107,6 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   font-size: 1.125rem;
   font-weight: 800;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.329)
-
 }
 
 .sequelize{
@@ -108,11 +116,24 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 #icons .fa {
   font-size: 2.5rem;
   padding-right: .625rem;
-  color: #adadad;
+  color: #babbbb;
+}
+
+.fa:hover {
+  /* color: rgb(234, 236, 122); */
+  color: #dce0e0 !important;
+  /* transform: translateY(.035rem); */
+}
+
+.fa:active {
+  color: rgb(233, 248, 255) !important;
+  /* box-shadow: 0rem .9375rem 1.25rem rgba(18, 163, 105, 0.4) !important;  */
+  transform: translateY(.125rem);
 }
 
 .navbar,#pageFooter{
   box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
+  height: 55px;
 }
 
 #pageFooter{
@@ -129,4 +150,10 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
     width: 3.75rem;
   float: left;
 }
+}
+
+@media (min-width: 62rem) {
+  body {
+    padding-top: 3.4375rem;
+  }
 }
