@@ -5,7 +5,6 @@ body {
     background-attachment: fixed;
   }
 
-  
   .project {
     margin-bottom: 1.875rem;
   }
@@ -120,20 +119,17 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
 .fa:hover {
-  /* color: rgb(234, 236, 122); */
   color: #dce0e0 !important;
-  /* transform: translateY(.035rem); */
 }
 
 .fa:active {
   color: rgb(233, 248, 255) !important;
-  /* box-shadow: 0rem .9375rem 1.25rem rgba(18, 163, 105, 0.4) !important;  */
   transform: translateY(.125rem);
 }
 
 .navbar,#pageFooter{
   box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
-  height: 55px;
+  height: 3.4375rem;
 }
 
 #pageFooter{
