@@ -18,7 +18,7 @@ Displays about info and finished projects.
 * Bootstrap
 ---
 ###  Link:
-https://jefferycarmichael.github.io/Portfolio/portfolio.html
+https://jefferycarmichael.github.io/Portfolio/
 
 ### GiftHub:
 https://github.com/JefferyCarmichael/Portfolio
