@@ -9,9 +9,9 @@ body {
     margin-bottom: 1.875rem;
   }
   
-  .pagination {
+  /* .pagination {
     margin-bottom: 1.875rem;
-  }
+  } */
 
 .mainCard{
   box-shadow: .125rem .125rem .125rem .0625rem rgba(17, 17, 17, 0.575);
@@ -129,12 +129,16 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 
 .navbar,#pageFooter{
   box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
-  height: 3.4375rem;
+  min-height: 3.125rem;
 }
 
 #pageFooter{
   box-shadow: 0 -.0625rem .3125rem .0625rem #474747af;
 }
+
+.navbar-fixed-top {
+  min-height: 5rem;
+  }
 
 @media (max-width: 768px) {
   html {
