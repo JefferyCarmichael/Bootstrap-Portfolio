@@ -1,32 +1,49 @@
 body {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
     padding-top: 3.4375rem;
-    background-image: url("../images/concrete_seamless.png");
+    background-image: url("../images/wall_a2.jpg");
     background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;  
   }
 
   .project {
     margin-bottom: 1.875rem;
   }
-  
-  /* .pagination {
-    margin-bottom: 1.875rem;
-  } */
+
 
 .mainCard{
   box-shadow: .125rem .125rem .125rem .0625rem rgba(17, 17, 17, 0.575);
 }
 .mainCard:hover {
-  /* color: rgb(234, 236, 122); */
-  box-shadow: .125rem .1875rem .625rem .1875rem rgba(9, 29, 77, 0.4);
+  box-shadow: .125rem .1875rem .625rem .1875rem rgba(66, 70, 78, 0.4);
   transform: translateY(.125rem);
 }
 
 .card-link,.card-title{
   font-weight: 800;
-  text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.404);
+  text-shadow: .125rem .125rem .525rem rgba(0, 0, 0, 0.404);
   text-decoration: none !important;
+  color: rgb(61, 61, 61) !important;
 }
+.card-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-shadow: .010rem .055rem .125rem rgba(63, 63, 63, 0.404);
+  border-top: 1px ridge rgba(56, 56, 56, 0.527) !important;
+  border-left: 1px ridge rgba(87, 86, 86, 0.349) !important;
+  background-color: rgb(248, 248, 242);
+  color: rgb(70, 69, 69);
+}
+
+.card-title:hover{
+  color: rgb(50, 77, 187)!important;
+}
+
+.card-link:hover{
+  color: rgb(55, 82, 192)!important;
+}
+
 
 .nav-link{
   font-size: 1.25rem;
@@ -34,7 +51,6 @@ body {
 }
 
 #navName{
-  /* font-family: 'Nothing You Could Do', cursive; */
   color: #c3c5c5;
   font-size: 1.65rem;
   font-weight: 400;
@@ -67,13 +83,13 @@ body {
   height: 3.75rem;
   width: 3.75rem;
   margin-bottom: .625rem;
-  margin-right: .625rem;
+  margin-right: .825rem;
 }
 
 /* Main Page Title */
 #name{
-margin-top: 2.875rem;
-font-size: 3.75rem;
+margin-top: 3.875rem;
+font-size: 2.75rem;
 font-weight: 900;
 text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
@@ -88,6 +104,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   }
 
 #info{
+  margin-top: .875rem;
   font-size: 1.125rem;
   font-weight: 600;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.404)
@@ -103,13 +120,32 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
 #about{
+  margin-top: .875rem;
   font-size: 1.125rem;
   font-weight: 800;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.329)
 }
 
 .sequelize{
-  width: 8.57rem;
+  width: 5.77rem;
+  height: 4.77rem;
+  margin-left: -1rem;
+}
+
+.handlebars{
+  width: 6.57rem;
+  margin-left: -1.5rem
+}
+
+.mysql{
+  width: 5.57rem;
+  margin-left: -1rem
+}
+
+.mongodb{
+  width: 5.77rem;
+  height: 4.77rem;
+  margin-left: -1rem;
 }
 
 #icons .fa {
@@ -130,6 +166,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 .navbar,#pageFooter{
   box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
   min-height: 3.125rem;
+  opacity: .9;
 }
 
 #pageFooter{
@@ -144,16 +181,85 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   html {
     font-size: 11px;
   }
-
   .col-md-1{
     height: 3.75rem;
     width: 3.75rem;
   float: left;
 }
+.logo{
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: .625rem;
+  margin-right: .825rem;
+}
+.container{
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+#name{
+  margin-top: 1.875rem;
+  }
+ 
+  .space{
+    margin-bottom: 3.625rem;
+  }
+
+  .handlebars{
+    width: 4.57rem;
+    margin-left: -.85rem
+  }
+  
+  .mysql{
+    width: 3.57rem;
+    margin-left: -.3rem
+  }
+  .mongodb{
+    margin-left: .25rem;
+  }
+ 
+  /* Picture on About Page */
+.auth-image {
+  width: 250px;
+  height: auto;
+}   
+.sequelize{
+  margin-left: -.25rem;
+}
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 769px) and (max-width: 992px) {
   body {
     padding-top: 3.4375rem;
   }
+  .project {
+    margin-bottom: 1.875rem;
+  }
+  .logo{
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: .625rem;
+    margin-right: .825rem;
+  }
+  .sequelize{
+    margin-left: -.2rem;
+  }
+  .mysql{
+    margin-left: -.25rem
+  }
+  .handlebars{
+    width: 4.57rem;
+    margin-left: -.85rem
+  }
+  .mongodb{
+    margin-left: .2rem;
+  }
+  .space{
+    margin-bottom: 3.625rem;
+  }
+  .container{
+    margin-bottom: -5px;
+    margin-top: -5px;
+  }
+  
 }
+    
