@@ -5,11 +5,11 @@ Displays about info and finished projects.
 
 
 ![About](assets/images/about.jpg)
-#### Main Page
+### Main Page
 ---
 
 ![Portfolio](assets/images/project.jpg)
-#### Project Portfolio
+### Project Portfolio Page
 ---
 ### Technologies Used:
 
