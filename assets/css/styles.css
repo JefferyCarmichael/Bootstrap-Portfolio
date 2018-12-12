@@ -30,8 +30,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   text-shadow: .010rem .055rem .125rem rgba(63, 63, 63, 0.404);
-  border-top: 1px ridge rgba(56, 56, 56, 0.527) !important;
-  border-left: 1px ridge rgba(87, 86, 86, 0.349) !important;
+  border-top: .0625rem ridge rgba(56, 56, 56, 0.527) !important;
+  border-left: .0625rem ridge rgba(87, 86, 86, 0.349) !important;
   background-color: rgb(248, 248, 242);
   color: rgb(70, 69, 69);
 }
@@ -61,7 +61,7 @@ body {
 /* Picture on About Page */
 .auth-image {
   float: left;
-  width: 200px;
+  width: 12.5rem;
   height: auto;
   margin-top: .625rem;
   margin-right: 1.5625rem;
@@ -110,7 +110,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.404)
 }
 
-/* Describes */
+/* Description*/
 .description{
   font-size: .9375rem;
   font-weight: 500;
@@ -133,8 +133,8 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
 .handlebars{
-  width: 6.57rem;
-  margin-left: -1.5rem
+  width: 5.8rem;
+  margin-left: -1.0rem
 }
 
 .mysql{
@@ -177,63 +177,75 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   min-height: 5rem;
   }
 
+
+/* Media Query 768px */
 @media (max-width: 768px) {
   html {
-    font-size: 11px;
+    font-size: .6875rem;
   }
   .col-md-1{
     height: 3.75rem;
     width: 3.75rem;
   float: left;
 }
+
+/* Badge CSS @768px*/
 .logo{
   height: 3rem;
   width: 3rem;
   margin-bottom: .625rem;
   margin-right: .825rem;
 }
+
 .container{
-  margin-bottom: -3px;
-  margin-top: -3px;
+  margin-bottom: -.1875rem;
+  margin-top: -.1875rem;
 }
+
 #name{
   margin-top: 1.875rem;
-  }
+}
  
-  .space{
+ .space{
     margin-bottom: 3.625rem;
-  }
+}
 
-  .handlebars{
-    width: 4.57rem;
-    margin-left: -.85rem
-  }
+.handlebars{
+    width: 3.57rem;
+    margin-left: -.45rem
+}
   
-  .mysql{
+ .mysql{
     width: 3.57rem;
     margin-left: -.3rem
-  }
-  .mongodb{
-    margin-left: .25rem;
-  }
- 
-  /* Picture on About Page */
-.auth-image {
-  width: 250px;
-  height: auto;
-}   
-.sequelize{
-  margin-left: -.25rem;
-}
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+  .mongodb{
+    margin-left: .25rem;
+}
+
+  .sequelize{
+    margin-left: -.25rem;
+}
+  
+  /* Main Picture on About Page @  768px*/
+.auth-image {
+  width: 15.625rem;
+  height: auto;
+} 
+}  
+
+
+
+/* Media Queries  768px to 999px */
+@media (min-width: 769px) and (max-width: 999px) {
   body {
     padding-top: 3.4375rem;
   }
   .project {
     margin-bottom: 1.875rem;
   }
+  /* Badges   768px to 999px*/
   .logo{
     height: 3rem;
     width: 3rem;
@@ -244,21 +256,23 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
     margin-left: -.2rem;
   }
   .mysql{
-    margin-left: -.25rem
+    margin-left: .25rem
   }
   .handlebars{
-    width: 4.57rem;
-    margin-left: -.85rem
+    width: 3.5rem;
+    margin-left: -.55rem
   }
   .mongodb{
-    margin-left: .2rem;
+    margin-left: -.2rem;
   }
+
+  /* Spacer  Div */
   .space{
     margin-bottom: 3.625rem;
   }
   .container{
-    margin-bottom: -5px;
-    margin-top: -5px;
+    margin-bottom: -.3125rem;
+    margin-top: -.3125rem;
   }
   
 }
