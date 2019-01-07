@@ -164,7 +164,8 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
 .navbar,#pageFooter{
-  box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
+/*   box-shadow: 0 .1875rem .3125rem .0625rem #474747af; */
+background-image: linear-gradient(rgba(52, 52, 59, 0.363), rgba(131, 131, 131, 0.411), rgba(134, 134, 134, 0.404),rgba(64, 64, 73, 0.336));   
   min-height: 3.125rem;
   opacity: .9;
 }
