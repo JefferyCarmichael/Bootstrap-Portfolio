@@ -7,10 +7,10 @@ body {
     background-size: cover;  
   }
 
+  /*Project Cards  */
   .project {
     margin-bottom: 1.875rem;
   }
-
 
 .mainCard{
   box-shadow: .125rem .125rem .125rem .0625rem rgba(17, 17, 17, 0.575);
@@ -26,6 +26,7 @@ body {
   text-decoration: none !important;
   color: rgb(61, 61, 61) !important;
 }
+
 .card-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -33,27 +34,58 @@ body {
   border-top: .0625rem ridge rgba(56, 56, 56, 0.527) !important;
   border-left: .0625rem ridge rgba(87, 86, 86, 0.349) !important;
   background-color: rgb(248, 248, 242);
-  color: rgb(70, 69, 69);
+  color: rgb(107, 105, 105);
 }
 
+/* Change color on hover  & active*/
 .card-title:hover{
-  color: rgb(50, 77, 187)!important;
+  color: rgba(33, 40, 139, 0.801) !important;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px rgba(255, 255, 255, 0.377), 0 0 20px #18a3ff, 0 0 15px #1693e62d, 0 0 20px;
+  color: rgba(48, 84, 151, 0.966)!important;
 }
 
 .card-link:hover{
-  color: rgb(55, 82, 192)!important;
+  color: rgba(33, 40, 139, 0.801) !important;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px rgba(255, 255, 255, 0.377), 0 0 20px #18a3ff, 0 0 15px #1693e64f, 0 0 15px;
+  color: rgba(48, 84, 151, 0.966)!important;
+}
+
+.card-title:active {
+  color: rgba(92, 238, 238, 0.973) !important;
+  transform: translateY(.125rem);
+}
+
+.card-link:active {
+  color: rgba(92, 238, 238, 0.993) !important;
+  transform: translateY(.125rem);
+}
+
+.nav-link:hover{
+  color: rgba(33, 40, 139, 0.801) !important;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px rgba(255, 255, 255, 0.377), 0 0 20px #18a3ff, 0 0 35px #1f9ef396, 0 0 40px #1f9ef375;
+  color: rgba(48, 84, 151, 0.966)!important;
+}
+
+.nav-link:active {
+  color: rgba(92, 238, 238, 0.993) !important;
+  transform: translateY(.125rem);
 }
 
 
-.nav-link{
-  font-size: 1.25rem;
-  font-weight: 400;
+
+#navbarResponsive{
+font-weight: bold;
+}
+
+a.nav-link{
+  font-size: 1.15rem;
+  font-weight: 900;
 }
 
 #navName{
   color: #c3c5c5;
   font-size: 1.65rem;
-  font-weight: 400;
+  font-weight: 900;
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
 }
 
@@ -82,6 +114,7 @@ body {
 .logo{
   height: 3.75rem;
   width: 3.75rem;
+  margin-top: .5rem;
   margin-bottom: .625rem;
   margin-right: .825rem;
 }
@@ -126,58 +159,89 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.329)
 }
 
+/* Badges */
 .sequelize{
-  width: 5.77rem;
-  height: 4.77rem;
-  margin-left: -1rem;
+  width: 5.07rem;
+  height: 4.07rem;
+  margin-left: -.4rem;
 }
 
 .handlebars{
-  width: 5.8rem;
-  margin-left: -1.0rem
+  width: 5.27rem;
+  margin-left: -.8rem
 }
 
 .mysql{
-  width: 5.57rem;
-  margin-left: -1rem
+  width: 4.07rem;
+  margin-left: -.25rem
 }
 
 .mongodb{
-  width: 5.77rem;
-  height: 4.77rem;
+  width: 5.07rem;
+  height: 4.07rem;
   margin-left: -1rem;
 }
 
+/* Footer Icons */
 #icons .fa {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   padding-right: .625rem;
   color: #babbbb;
+  margin-top: .3125rem;
 }
 
 .fa:hover {
-  color: #dce0e0 !important;
+  /* color: #dce0e0 !important; */
+  color: rgba(33, 40, 139, 0.801) !important;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px rgba(255, 255, 255, 0.377), 0 0 20px #18a3ff, 0 0 15px #1693e64f, 0 0 30px;
+  color: rgba(48, 84, 151, 0.966)!important;
+
 }
 
 .fa:active {
-  color: rgb(233, 248, 255) !important;
+  color: rgba(92, 238, 238, 0.932) !important;
   transform: translateY(.125rem);
 }
 
+/* Header and Footer */
 .navbar,#pageFooter{
-  box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
-  background-image: linear-gradient(rgba(73, 73, 75, 0.363), rgba(131, 131, 131, 0.411), rgba(134, 134, 134, 0.404),rgba(64, 64, 73, 0.336));   
+  transition-property: background-color;
+  transition-duration:  750ms;
+  transition-timing-function:  ease;
   min-height: 3.125rem;
   opacity: .9;
+  padding: 0 !important;;
+}
+
+.scrolled{
+  transition-property: background-color;
+  transition-duration:  750ms;
+  transition-timing-function:  ease;
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+
+.navbar{
+  box-shadow: 0 .1875rem .3125rem .0625rem #474747af;
+  background-image: linear-gradient(rgba(27, 27, 32, 0.87), rgba(125, 127, 128, 0.411));  
 }
 
 #pageFooter{
   box-shadow: 0 -.0625rem .3125rem .0625rem #474747af;
+  background-image: linear-gradient( rgba(125, 127, 128, 0.411),rgba(27, 27, 32, 0.87));  
 }
 
 .navbar-fixed-top {
   min-height: 5rem;
   }
 
+
+/* Main Picture on About Page @ 768px*/
+@media (max-width: 768px) {
+.col-md-1 {
+  width: 60px !important ;
+ }  
+}
 
 /* Media Query 768px */
 @media (max-width: 768px) {
@@ -188,7 +252,7 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
     height: 3.75rem;
     width: 3.75rem;
   float: left;
-}
+ }
 
 /* Badge CSS @768px*/
 .logo{
@@ -196,46 +260,46 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   width: 3rem;
   margin-bottom: .625rem;
   margin-right: .825rem;
-}
+  margin-top: -.01rem;
+ } 
 
 .container{
   margin-bottom: -.1875rem;
   margin-top: -.1875rem;
-}
+ }
 
 #name{
   margin-top: 1.875rem;
-}
+ }
  
  .space{
     margin-bottom: 3.625rem;
-}
+ }
 
 .handlebars{
     width: 3.57rem;
     margin-left: -.45rem
-}
+ }
   
  .mysql{
     width: 3.57rem;
     margin-left: -.3rem
-}
+ }
 
   .mongodb{
     margin-left: .25rem;
-}
+ }
 
   .sequelize{
     margin-left: -.25rem;
-}
+ }
   
   /* Main Picture on About Page @  768px*/
 .auth-image {
   width: 15.625rem;
   height: auto;
-} 
+ } 
 }  
-
 
 
 /* Media Queries  768px to 999px */
@@ -248,10 +312,12 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
   }
   /* Badges   768px to 999px*/
   .logo{
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin-bottom: .625rem;
     margin-right: .825rem;
+    margin-top: .25rem;
+    
   }
   .sequelize{
     margin-left: -.2rem;
@@ -275,6 +341,14 @@ text-shadow: .125rem .125rem .625rem rgba(0, 0, 0, 0.609)
     margin-bottom: -.3125rem;
     margin-top: -.3125rem;
   }
+  
+  .col-md-1{
+    height: 3.625rem;
+    }
+    
+.mysql{
+  margin-left: .025rem
+ }
   
 }
     
