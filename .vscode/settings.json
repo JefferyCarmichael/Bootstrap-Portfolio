@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {
+      "editorLineNumber.foreground": "#f0f5f0",
+      "editorLineNumber.activeForeground": "#388a58"
+    },
+    "peacock.affectStatusBar": true,
+    "peacock.preferredColors": [
+        { "name": "Gatsby Purple", "value": "#639" },
+        { "name": "Auth0 Orange", "value": "#eb5424" },
+        { "name": "Azure Blue", "value": "#007fff" }
+      ],
+      "peacock.elementAdjustments": {
+        "activityBar": "darken"
+      }
+}
